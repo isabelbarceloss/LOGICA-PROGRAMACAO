@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+/*IMPORTANDO FONTES DO GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #c3e2f7dc;
+    text-align: justify;
+}
+
+/*CONFIGURAÇÕES DO MENU*/
+nav {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+  color: white;
+  background-color: #928b8b67;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #002f5e;
+  border-radius: 5px;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: #002f5e;
+  background-color: #928b8b67;
+  padding: 5px;
+}
+
+/*TÍTULO DAS PÁGINAS*/
+h1 {
+    color: #002f5e;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/*HEADER DAS PÁGINAS*/
+.cabeçalho1 {
+    background-image: linear-gradient(to bottom, #002f5e, transparent);
+}
+
+/*CONFIGURAÇÕES h2*/
+.titulo1 {
+    color: #002f5e;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.titulo2 {
+    color: #002f5e;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+/*CONFIGURAÇÃO h3*/
+h3 {
+    color: #002f5e;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: left;
+    font-size: large;
+}
+
+/*NEGRITO DAS PÁGINAS*/
+strong {
+    color: #1d548a;
+}
+
+/*IMAGENS*/
+.imagens {
+    text-align: center;
+}
+
+img {
+  border-radius: 20px;
+  /* mantém o tamanho original em telas grandes */
+}
+
+/*EFEITO HOVER NAS IMAGENS*/
+.imagens img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagens img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/*RODAPÉ*/
+footer {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(to top, #002f5e, transparent);
+}
+
+footer p {
+  padding-top: 35px;
+}
+
+/*CONFIGURAÇÕES PÁGINA INDEX*/
+.logo {
+    text-align: center;
+}
+
+.conteudo-principal1 {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-indent: 20px;
+}
+
+.paragrafo {
+    margin: 20px;
+    text-align: left;
+}
+
+p {
+  text-align: center;
+}
+
+ul.minha-lista {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+/*GRID - CASOS REAIS*/
+#casos-reais {
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 1000px;
+}
+
+#casos-reais h2 {
+  color: #002f5e;
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+.grid-casos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 25px;
+}
+
+.card-caso {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: justify;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-caso h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-caso p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.card-caso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+/*CONFIGURAÇÕES PÁGINA PRINCIPIOS*/
+.grid-principios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 10px 40px;
+}
+
+.card {
+  background: #f8f9fa;
+  border: 2px solid #1d548a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: justify;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #d4d6d8;
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #002f5e;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/*CONFIGURAÇÕES PÁGINA AMEAÇAS*/
+.conteudo-principal3 {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.conteudo-ameacas {
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+/*CONFIGURAÇÕES DA PÁGINA BOAS PRÁTICAS*/
+.grid-praticas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.card2 {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.card2 h3 {
+  color: #04538b;
+  margin-bottom: 10px;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/*ESTILIZAÇÃO DA INTERAÇÃO - DICAS*/
+.dicas-seguranca {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dicas-seguranca h2 {
+  color: #002f5e;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn-dica {
+  background-color: #04538b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dica:hover {
+  background-color: #003366;
+  transform: scale(1.05);
+}
+
+.box-dica {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+/*PÁGINA DOS DESENVOLVEDORES*/
+.grid-devs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    margin: 0px 40px;
+}
+
+.dev-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.dev-card:hover {
+    transform: translateY(-5px);
+}
+
+.dev-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  nav p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grid-principios,
+  .grid-praticas,
+  .grid-devs {
+    grid-template-columns: 1fr;
+  }
+}

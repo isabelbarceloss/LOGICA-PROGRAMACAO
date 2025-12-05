@@ -1,0 +1,13 @@
+create database cadastros;
+use cadastros;
+
+create table produtos (
+	id int primary key auto_increment,
+    nome varchar(50),
+    categoria varchar(50),
+    preco float (10,2),
+    quantidade int,
+    descricao varchar(100) null,
+    editar varchar(10),
+    excluir varchar(10)
+);

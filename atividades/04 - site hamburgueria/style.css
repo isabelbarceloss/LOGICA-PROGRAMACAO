@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* #ED4F1C
+#EB900E
+  #EB6A0E
+  #F01100
+  #EBAB0E
+#EB985C */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, #EB6A0E, #EB985C, transparent);
+    color: #fff;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header figure {
+    text-align: center;
+    margin-top: 10px;  /* controla distância do topo */
+    margin-bottom: 0;  /* tira espaço extra embaixo */
+}
+
+header figure img {
+    max-width: 500px; /* controla tamanho da logo */
+}
+
+nav {
+    text-align: center;
+    font-size: 1rem;
+    word-spacing: 10px;
+    margin-right: 5%;
+    padding-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #eb985c;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000a9;
+    color: #ff6a00;
+}
+
+.imagem-principal {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.imagem-principal:hover {
+    opacity: 0.7;
+}
+
+#grid-conteudo {
+    background-color: #fff;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: #EB6A0E;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px; /* espaço entre os cards */
+    justify-items: center; /* centraliza os itens dentro da célula */
+    margin: 20px auto;
+    max-width: 1000px; /* controla largura máxima do grid */
+}
+
+figure {
+    text-align: center; /* centraliza tudo dentro do figure */
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+.imagens-site {
+     /* transforma em bloco para margin funcionar */
+    margin: 0 auto; /* centraliza a imagem */
+    border-radius: 20px;
+    width: 270px; /* corrigi colocando px */
+    height: 200px;
+}
+
+.imagens-site:hover {
+    opacity: 0.7;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background: linear-gradient(to bottom, #fff, #EB6A0E);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
