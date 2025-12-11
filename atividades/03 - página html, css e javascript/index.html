@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Antecessor e Sucessor</h1>
+        
+        <p>Digite um número:</p>
+        <input type="text" id="numero" placeholder="Número">
+        <button onclick="
+            var n = parseInt(document.getElementById('numero').value);
+            if(isNaN(n)) {
+                document.getElementById('resultado').innerText = 'Digite um número válido!';
+            } else {
+                document.getElementById('resultado').innerText = 'Antecessor: ' + (n-1) + ' | Sucessor: ' + (n+1);
+            }
+        ">Verificar</button>
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas</title>
+    <link rel="shortcut icon" href="img/logo e favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nomes/RGM:
+        - Isabel Barcelos Agualuza | 11251101322
+        - Isabela Pereira de Brito | 11251100580
+        - João de Lima Vernosi Diniz | 11251102193
+    -->
+    <header class="cabeçalho1">
+        <br>
+        <nav>
+            <p>
+                <a class="links" href="index.html">Home</a> |
+                <a class="links" href="principios.html">Princípios</a> |
+                <a class="links" href="ameacas.html">Ameaças</a> |
+                <a class="links" href="boas_praticas.html">Boas Práticas</a> |
+                <a class="links" href="portfolio.html">Sobre Nós</a>
+            </p>
+        </nav>
+        <br>
+        <h1>COMO SE PROTEGER NO MUNDO DIGITAL?</h1>
+    </header>
+    <br>
+    <section id="boas-praticas">
+        <p>Hoje em dia, a gente usa a internet pra quase tudo: conversar, estudar, trabalhar e até pagar contas.
+        <br>Por isso, é muito importante saber como se proteger no mundo digital e evitar cair em golpes ou ter os dados vazados.</p>
+        <div class="grid-praticas">
+            <div class="card2">
+                <h3>🔑 Senhas Fortes</h3>
+                <p>Use combinações de letras, números e símbolos. Evite datas de nascimento ou palavras óbvias. Troque periodicamente.</p>
+            </div>
+
+            <div class="card2">
+                <h3>📲 Autenticação em Duas Etapas</h3>
+                <p>Ative o 2FA sempre que possível. Garante uma camada extra além da senha.</p>
+            </div>
+
+            <div class="card2">
+                <h3>🔄 Atualizações Regulares</h3>
+                <p>Mantenha sistemas e aplicativos sempre atualizados. Corrige falhas de segurança exploradas por criminosos.</p>
+            </div>
+
+            <div class="card2">
+                <h3>💾 Backups Frequentes</h3>
+                <p>Faça cópias de arquivos importantes em locais seguros. Use nuvem ou HD externo.</p>
+            </div>
+
+            <div class="card2">
+                <h3>📧 Cuidado com E-mails</h3>
+                <p>Não clique em links suspeitos. Confira o remetente antes de abrir anexos.</p>
+            </div>
+    
+            <div class="card2">
+                <h3>🛡️ Antivírus e Firewall</h3>
+                <p>Protege contra malwares e acessos não autorizados. Configure para atualizações automáticas.</p>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="dicas-seguranca">
+            <h2>Dicas de Segurança</h2>
+            <button class="btn-dica" onclick="mostrarDica()">Mostrar Dica</button>
+            <p id="dica" class="box-dica"></p>
+        </section>
+        
+        <!-- Interação com JavaScript -->
+        <div>
+            <script>
+                let dicas = [
+                    "Não use a mesma senha em vários sites.",
+                    "Cuidado ao usar computadores públicos para acessar suas contas.",
+                    "Evite salvar senhas no navegador.",
+                    "Desconfie de e-mails que pedem informações pessoais.",
+                    "Ative notificações de login em suas contas importantes.",
+                    "Bloqueie seu computador ou celular quando não estiver usando.",
+                    "Evite redes Wi-Fi públicas para acessar bancos e serviços sensíveis.",
+                    "Sempre faça logout de suas contas em dispositivos compartilhados.",
+                    "Use aplicativos oficiais para autenticação em dois fatores.",
+                    "Tenha cuidado com pendrives ou dispositivos USB desconhecidos."
+                ];
+                function mostrarDica() {
+                let aleatoria = Math.floor(Math.random() * dicas.length);
+                document.getElementById("dica").innerHTML = dicas[aleatoria];
+                }
+            </script>
+        </div>
+    <br>
+    <footer>
+        <p>Desenvolvido por Isabel Barcelos, Isabela Pereira e João Diniz para a aula de Lógica e Programação.</p>
+    </footer>
+</body>
+</html>
